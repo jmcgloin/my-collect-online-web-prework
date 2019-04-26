@@ -1,9 +1,9 @@
 def my_collect(array)
-  i= 0
+  i = 0
   newArray = []
   while i < array.count do
     yield (array[i], newArray)
-    i+=1
+    i += 1
   end
   newArray
 end
