@@ -5,3 +5,5 @@ def my_collect(array)
     
   end
 end
+
+my_collect(["ruby", "javascript","python","objective-c"]) {|lang| lang.upcase}
