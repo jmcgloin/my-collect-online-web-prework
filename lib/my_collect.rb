@@ -1,10 +1,10 @@
 def my_collect(array)
   i= 0
+  newArray = []
   while i < array.count do
-    yield array[i]
+    yield array[i], newArray
     i+=1
   end
-  array
 end
 
-my_collect(["ruby", "javascript","python","objective-c"]) {|lang| lang = lang.upcase}
+my_collect(["ruby", "javascript","python","objective-c"]) {|lang| newArray.push(lang.upcase)}
