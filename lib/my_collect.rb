@@ -4,6 +4,7 @@ def my_collect(array)
     yield array[i]
     i+=1
   end
+  array
 end
 
 my_collect(["ruby", "javascript","python","objective-c"]) {|lang| lang = lang.upcase}
