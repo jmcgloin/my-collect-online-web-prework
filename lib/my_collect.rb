@@ -5,6 +5,7 @@ def my_collect(array)
     yield array[i], newArray
     i+=1
   end
+  newArray
 end
 
 my_collect(["ruby", "javascript","python","objective-c"]) {|lang| newArray.push(lang.upcase)}
