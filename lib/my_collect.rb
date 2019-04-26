@@ -8,4 +8,4 @@ def my_collect(array)
   newArray
 end
 
-my_collect(["ruby", "javascript","python","objective-c"]) {|lang| newArray.push(lang.upcase)}
+my_collect(["ruby", "javascript","python","objective-c"]) {|lang, newArray| newArray.push(lang.upcase)}
